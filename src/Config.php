@@ -5,8 +5,8 @@ namespace miralsoft\weclapp\api;
 class Config
 {
     /** @var string The URI to the API */
-    public static $URI = 'https://xxx.weclapp.com/webapp/api/v1/';
+    public static $URI = env('WECLAPP_BASE_URL');
 
     /** @var string The Token for connection */
-    public static $TOKEN = 'XXX';
+    public static $TOKEN = env('WECLAPP_API_KEY');
 }
